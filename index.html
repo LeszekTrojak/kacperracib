@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-  <div class="1box">
+  <section class="card" id="rating">
     <div class="star">
-      <img src="icon-star.svg" alt="star">
+      <img src="https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/main/images/icon-star.svg" alt="">
     </div>
     <h1>How did we do?</h1>
     <p>
       Please let us know how we did with your support request.
       All feedback is appreciated to help us improve our offering!
     </p>
-    <div class="ocen">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+    <div class="ratings">
+      <input type="radio" name="rating" id="r1">
+      <label for="r1">1</label>
+      <input type="radio" name="rating" id="r2">
+      <label for="r2">2</label>
+      <input type="radio" name="rating" id="r3">
+      <label for="r3">3</label>
+      <input type="radio" name="rating" id="r4">
+      <label for="r4">4</label>
+      <input type="radio" name="rating" id="r5">
+      <label for="r5">5</label>
     </div>
-    <button class="submit">
-      SUBMIT
-  </button>
-    </div>
+    <a href="#thank-you" class="submit-btn">SUBMIT</a>
+  </section>
+  <section class="card thank-you" id="thank-you">
+    <img src="https://raw.githubusercontent.com/hejkeikei/interactive-rating-component/main/images/illustration-thank-you.svg" alt="" class="thank-img">
+    <h2>Thank you!</h2>
+    <p>
+      We appreciate you taking the time to give a rating.
+      If you ever need more support, don’t hesitate to get in touch!
+    </p>
+  </section>
 </body>
 </html>
